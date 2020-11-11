@@ -1,0 +1,33 @@
+body {
+  font-size: 14px;
+}
+/* h1,h2,h3,h4,h5,h6 */
+.fixed {
+  positio: fixed;
+}
+.rel {
+  position: relative;
+}
+/* input,
+button,
+textarea {
+  outline: none;
+} */
+.abs {
+  position: absolute;
+}
+.sticky {
+  position: sticky;
+}
+.flex {
+  display: flex;
+}
+.alc {
+  align-items: center;
+}
+.noul {
+  text-decoration: none;
+}
+.hover {
+  text-decoration: underline;
+}
