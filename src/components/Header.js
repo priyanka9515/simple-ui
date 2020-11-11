@@ -6,6 +6,7 @@ import {search} from 'react-icons-kit/fa/search'
 
 import {Link} from "react-router-dom";
 import { pink } from '@material-ui/core/colors';
+import { Button } from '@material-ui/core';
 
 function Header() {
     const nav=[
@@ -16,25 +17,32 @@ function Header() {
           
         return (  
             <React.Fragment>
-            <div className="Header fixed flex alc" style={{background:"gray",height:"50px"}}>
+            <div className="Header fixed flex aic" >
                 
-        <h3 >  Nayagaadi</h3>
-<div className ="location rel flex alc" style={{background:"white",border:"2px solid black",borderRadius:"5px",marginLeft:"100px"}}
->                   <Icon
- icon={search} style={{ size:"24px", padding:"10px",background:"#fff",border:"0px",flex:"1"}} />
+            <div className="logo">
+                <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-gztonagxy-qbbFqWc6zFaLjFZJR74-V8Ug&usqp=CAU"}></img>
+           </div>
+               
+<div className ="location rel flex aic" 
+  >                   <Icon
+ icon={search}  className= "s24" style={{padding:"10px"}} />
     
-    <input className="label" placeholder="your location" value ="india" style={{fontSize:"16px",outline:"none"}}></input>
-    <Icon icon={circleDown} style={{ size:"24px", padding:"10px",background:"#fff",border:"0px",flex:"1"}}/>
+    <input className="label" placeholder="your location" value ="india" style={{  background: "#fff",
+ border: "2px 333solid",
+ borderradius: "5px",flex:1,padding:"10px",}}></input>
+    <Icon icon={circleDown} className="arrow s24" style={{flex:1,padding:"10px",background:"fff",size:"30px"}}/>
         
 </div>
-<div className="search flex alc"  style={{marginLeft:"100px"}}>
-    <input type ="text" placeholder ="find cars, Bikes, and more.."  style={{background:"white",border:"2px solid black",borderRadius:"5px",marginLeft:"100px",fontSize:"20px",flex:"2",margin:"0px 20px"}}className="query"/>
-    <Icon icon ={search} style={{padding:"-30px",fontWeight:"20px"}}/>
+<div className="search flex alc" >
+    <input type ="text" placeholder ="find cars, Bikes, and more.."  style={{  background: "#fff",  border: "2px 333solid",
+ borderradius: "5px",flex:1,padding:"10px",}}className="query font s15"/>
+    <Icon icon ={search} className="go s24 "/>
 </div>
 <div className="actions flex alc">
-    <Link to ="/account signin" className ="font" style={{marginLeft:"50px",fontSize:"24px"}}>signin</Link>
+    <Link to ="/account signin" className ="fontb s15" >signin</Link>
 
 </div>
+<Button className="sell" ></Button>
 <div className="hnav fixed flex alc">
     <button className="view-cates flex alc">
         
@@ -59,30 +67,3 @@ function Header() {
 
  
 export default Header;
-// import React, { Component } from 'react';
-// import Icon from 'react-icons-kit';
-// import {search} from 'react-icons-kit/fa/search'
-//  import {circleDown} from 'react-icons-kit/icomoon/circleDown'
-
-
-// function Header() {
-  
-//         return (
-//             <div className="Header fixed flex ">
-//                 <div className="logo">
-//                 <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-gztonagxy-qbbFqWc6zFaLjFZJR74-V8Ug&usqp=CAU"}></img>
-           
-//                 </div>
-//                 <div className ="location rel">
-//                     <div 
-// icon={search} />
-// <input className="label" placeholder="your location">india</input>
-//   <Icon icon={circleDown} style={{ size:"24px", padding:"10px",background:"#fff",border:"0px",flex:"1"}}/>
-
-//                     </div>
-//                      </div>
-//           );
-    
-// }
- 
-// export default Header;
