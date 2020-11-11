@@ -1,18 +1,28 @@
+.noul {
+  text-decoration: none;
+}
+.hover {
+  text-decoration: underline;
+}
 body {
   font-size: 14px;
 }
-/* h1,h2,h3,h4,h5,h6 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  padding: 0px;
+  margin: normal;
+}
 .fixed {
   positio: fixed;
 }
 .rel {
   position: relative;
 }
-/* input,
-button,
-textarea {
-  outline: none;
-} */
 .abs {
   position: absolute;
 }
@@ -22,12 +32,6 @@ textarea {
 .flex {
   display: flex;
 }
-.alc {
+.aic {
   align-items: center;
-}
-.noul {
-  text-decoration: none;
-}
-.hover {
-  text-decoration: underline;
 }

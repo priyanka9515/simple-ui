@@ -7,8 +7,24 @@
   box-shadow: 0px 2px 2px #dedede;
   padding: 0px 30%;
 }
-/* .header.location {
+
+.header.logo {
+}
+.header.logo .img {
+  width: 100%;
+}
+
+.header.location {
   background: "white";
   border: "2px 333solid";
   borderradius: "5px";
-} */
+}
+.hnav {
+  top: 70px;
+  left: 0px;
+  right: 0px;
+  height: 40px;
+  background: #f1f1f1;
+  box-shadow: 0px 2px 2px #dedede;
+  padding: 0px 30%;
+}
